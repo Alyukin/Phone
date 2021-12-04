@@ -37,7 +37,7 @@ def ask_name(message):
 def start_message(message):
     user_name = message.text
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.add('/game', 'cats')
+    markup.add('/game', '/cats')
     bot.send_message(message.chat.id,
                      user_name + ', ты можешь сыграть в Камень-Ножницы-Бумага(/game) или получить фотографии котов(/cats)',
                      reply_markup=markup)
